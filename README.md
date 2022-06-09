@@ -8,6 +8,7 @@ Modify the two `X11` library lines in `config.mk` and uncomment the default valu
 ## Additional dependencies
 
 * **compton** or **xcompmgr** for alpha 
+* You might need **st-terminfo** if st inputs seem broken (in void linux anyway)
 
 composition manager needs to be running for alpha to work
 
