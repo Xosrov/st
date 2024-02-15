@@ -1,7 +1,5 @@
 ## Patches used in this fork
 
-  
-
 ### These patches are already applied, no steps needed by user
 * **alpha** transparency, requires a composition manager like xcompmgr
 * **blinking**: aesthetics

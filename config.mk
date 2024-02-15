@@ -1,5 +1,5 @@
 # st version
-VERSION = 0.8.5
+VERSION = 0.9
 
 # Customize below to fit your system
 
@@ -7,12 +7,8 @@ VERSION = 0.8.5
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
-# void linux fix
-X11INC = /usr/include/X11
-X11LIB = /usr/lib/X11
-# normally
-# X11INC = /usr/X11R6/include
-# X11LIB = /usr/X11R6/lib
+X11INC = /usr/X11R6/include
+X11LIB = /usr/X11R6/lib
 
 PKG_CONFIG = pkg-config
 
@@ -20,7 +16,7 @@ PKG_CONFIG = pkg-config
 INCS = -I$(X11INC) \
        `$(PKG_CONFIG) --cflags fontconfig` \
        `$(PKG_CONFIG) --cflags freetype2`
-LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \
        `$(PKG_CONFIG) --libs fontconfig` \
        `$(PKG_CONFIG) --libs freetype2`
 
